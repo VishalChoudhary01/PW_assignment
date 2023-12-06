@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #fff;
+  --txt-color: #4a4a4a;
+  --main-color: #bd3b4a;
+  --light-shade-main-color: #bf5555;
+  --text-main-color: #d84e55;
+  --icon-color: #83b6e7;
+}
+.container {
+  max-width: 1536px;
+  background: #fff;
+}
+nav {
+  max-width: 100%;
+  height: 99px;
+  display: flex;
+}
+.logo {
+  width: 20%;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 85px;
+  height: 80px;
+  
+}
+.menu {
+  width: 80%;
+  border: 3px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+/* .menu .menu_option ul li a {
+  display: flex;
+  justify-content: center;
+  border: 2px solid brown;
+} */
+
