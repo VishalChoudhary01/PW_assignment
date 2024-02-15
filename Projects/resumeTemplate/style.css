@@ -11,8 +11,51 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
-body{
-    background: #222;
+body {
+  background: #222;
+}
+body::after {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(
+    to left top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  border-radius: 50%;
+}
+body::before {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  bottom: 70px;
+  right: 5px;
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(
+    to right bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  border-radius: 50%;
 }
 .container {
   max-width: 70%;
@@ -49,9 +92,9 @@ section h4 {
   margin-left: 10px;
   margin-bottom: 60px;
 }
-hr{
-    margin-top: 20px;
-    border: 1px solid rgb(136, 136, 136);
+hr {
+  margin-top: 20px;
+  border: 1px solid rgb(136, 136, 136);
 }
 .subheader h5 {
   font-size: 1em;
@@ -82,7 +125,6 @@ hr{
 
 .project_bullets ul {
   padding-left: 40px;
-  
 }
 
 .college_session {
@@ -97,6 +139,6 @@ hr{
   font-style: italic;
 }
 
-article{
-    padding: 10px 20px;
+article {
+  padding: 10px 20px;
 }
