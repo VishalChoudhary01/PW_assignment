@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 :root {
-  --side-menu-bgcolor: rgb(200, 205, 209);
+  --side-menu-bgcolor: rgb(228, 232, 236);
   --heading-text-color: rgba(52, 52, 228, 0.656);
   --project-heading: rgba(66, 65, 65, 0.923);
   --role-text-color: rgba(18, 17, 17, 0.895);
@@ -88,10 +89,20 @@ section h1 {
 section h4 {
   color: var(--role-text-color);
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-left: 10px;
-  margin-bottom: 60px;
 }
+
+section h6 {
+  margin-left: 11px;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  color: rgb(86, 84, 84);
+}
+section #location span{
+  color: rgb(29, 28, 28);
+}
+
 hr {
   margin-top: 20px;
   border: 1px solid rgb(136, 136, 136);
@@ -141,4 +152,60 @@ hr {
 
 article {
   padding: 10px 20px;
+}
+.subheader ul {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.subheader ul li i a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #4c4b4b;
+  transition: all 0.5s;
+}
+.subheader ul li a:hover {
+  color: rgba(52, 52, 230, 0.519);
+  font-weight: 800;
+}
+.subheader ul li i {
+  font-size: 1.2em;
+  padding: 4px;
+}
+.subheader ul li img {
+  width: 22px;
+  padding: 1px;
+  position: relative;
+  left: 2px;
+  top: 5px;
+}
+.subheader #gmail {
+  font-size: 0.9em;
+  user-select: text;
+  cursor: all;
+}
+
+.skills p {
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.skills p:hover {
+  font-weight: 700;
+  color: #4c4b4b;
+  text-shadow: 0 0 1px #06c626;
+}
+.skills ul {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.skills ul li {
+  color: #222;
+  transition: all 0.4s;
+}
+.skills ul li:hover {
+  color: rgba(3, 13, 160, 0.616);
+  font-size: 1.1em;
+  text-shadow: 0px 0px 2px rgb(23, 216, 2);
 }
