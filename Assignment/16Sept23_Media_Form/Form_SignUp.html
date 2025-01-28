@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        input[type="number"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .gender-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gender-section div {
+            display: flex;
+            align-items: center;
+        }
+
+        .gender-section label {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+
+        .terms-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .terms-section label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .gender-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .gender-section div {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Sign In / Sign Up</h1>
+
+        <!-- Sign In Form -->
+        <section class="sign_in form-section">
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" id="email" required minlength="13" maxlength="30">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="******">
+                
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+
+        <!-- Sign Up Form -->
+        <section class="sign_up form-section">
+            <form action="">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" required minlength="3" maxlength="15">
+                
+                <label for="middle_name">Middle Name</label>
+                <input type="text" id="middle_name" required minlength="3" maxlength="15">
+                
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" required minlength="3" maxlength="15">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="Enter Password">
+                
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" required placeholder="Enter Confirm Password">
+                
+                <label for="age">Age</label>
+                <input type="number" id="age" required min="18">
+                
+                <!-- Gender Section -->
+                <div class="gender-section">
+                    <div>
+                        <input type="radio" id="male" name="gender" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" required>
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                
+                <!-- Terms and Conditions Section -->
+                <div class="terms-section">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" required> I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
